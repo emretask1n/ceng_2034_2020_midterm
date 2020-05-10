@@ -1,0 +1,91 @@
+\documentclass[onecolumn]{article}
+%\usepackage{url}
+%\usepackage{algorithmic}
+\usepackage[a4paper]{geometry}
+\usepackage{datetime}
+\usepackage[margin=2em, font=small,labelfont=it]{caption}
+\usepackage{graphicx}
+\usepackage{mathpazo} % use palatino
+\usepackage[scaled]{helvet} % helvetica
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{subfigure}
+% Letterspacing macros
+\newcommand{\spacecaps}[1]{\textls[200]{\MakeUppercase{#1}}}
+\newcommand{\spacesc}[1]{\textls[50]{\textsc{\MakeLowercase{#1}}}}
+\title{\spacecaps{Assignment Report 1: Process and Thread Implementation}\\ \normalsize \spacesc{CENG2034, Operating Systems} }
+
+\author{Emre Taşkın\\emretaskin2@posta.mu.edu.tr\\170709060\\Github username : emretask1n}
+%\date{\today\\\currenttime}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In this lab,I learned how operating systems manage their memories. I learned some
+python libraries to use linux for systemcalls and processes.
+
+
+I looked at how the threads and interpreters work in unit time. I looked advantages and disadvantages of multiprocessing and multithreading.
+\end{abstract}
+
+
+\section{Introduction}
+This labs aim was learning operating systems and their system managings, to have knowledge about operating systems, processes and threads.
+
+\section{Assignments}
+
+\subsection{Assignment 1}
+First I wrote a python script that wrotes PID of itself.
+
+
+\begin{center}
+    \includegraphics[width=.9\textwidth]{1.jpg}
+\end{center}
+
+
+\subsection{Assignment 2} 
+Second I printed the loadavg of my linux operating system.
+
+\begin{center}
+    \includegraphics[width=.9\textwidth]{2.jpg}
+\end{center}
+
+
+\subsection{Assignment 3} 
+I took and printed “5 min loadavg” value and cpu core count. 
+
+\begin{center}
+    \includegraphics[width=.9\textwidth]{3.jpg}
+\end{center}
+
+\subsection{Assignment 4} 
+
+I checked some links, are they working or not working. First I create a function
+and determinated its time without using multithreading. Then I used multithreading and looked its time. I saw that multithreading is faster way to check links.
+
+\begin{center}
+    \includegraphics[width=.9\textwidth]{4.jpg}
+\end{center}
+
+\begin{center}
+    \includegraphics[width=.9\textwidth]{5.png}
+\end{center}
+
+
+
+\section{Results}
+Python's os library helps to process with codes like os.getpid() provides functions for interacting with the operating system, os.getloadavg()  is used to get the load average over the last 1, 5, and 15 minutes, os.cpu\textunderscore count() returns the number of processors number of cores present in the system. Requests library is simple HTTP library for Python, built for human beings. Multiprocessing and threading can be really useful in some situations.If we use multithreading in a cpu using program that increases the execution time of the process.
+
+
+\section{Conclusion}
+In this lab, I learned about how linux operating system manages memory and
+what is process in linux.I ran some process codes from python scripts.I learned and implemented python libraries that I had never used before. I made multiprocessing and multithreading examples. I also learned how can I set up an virtual machine to use linux thanks to this lab.
+
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
+
